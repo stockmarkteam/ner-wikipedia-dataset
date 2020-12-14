@@ -4,7 +4,7 @@ Vue.component('annotation',{
   props: ['item'],
   data: function (){
     let data = {
-     entity_type_name: ['人名','法人名','政府・政治・国際組織名','その他組織名','地名','施設名','製品名','イベント名']
+     entity_type_name: ['人名','法人名','政治的組織名','その他組織名','地名','施設名','製品名','イベント名']
     };
     return data
   },
