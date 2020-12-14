@@ -1,0 +1,168 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color:#ffffff;
+  height:100vh;
+  display:grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 75px 1fr;
+  grid-template-areas:
+    "grid_top"
+    "grid_main";
+}
+
+#grid_top{
+  grid-area: grid_top;
+  background-color: #555555;
+  color:#eeeeee;
+  padding:25px 50px 25px 50px;
+  box-shadow: 0px 4px 4px gray;
+  z-index:1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#form_main{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#grid_top input[type='text']{
+  width: 150px;
+  padding: 5px 5px;
+  margin:0px 0px 0px 0px;
+  border-radius: 3px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+#grid_top button{
+  height:25px;
+  margin:0px 0px 0px 5px;
+  padding:3px;
+  border-radius:2px;
+  box-sizing: border-box;
+  background-color:#555555;
+  color:#00ff00;
+  font-weight:bold;
+  border:1px solid #00ff00;
+}
+
+#grid_top button:focus{
+  outline:0;
+}
+
+#grid_top button:hover{
+  background-color:#28a745;
+  color:#ffffff;
+  border:2px solid #28a745;
+}
+
+#grid_top button:active{
+  background-color:#555555;
+  color:#00ff00;
+  font-weight:bold;
+  border:1px solid #00ff00;
+}
+
+#grid_top span{
+  margin:0px 0px 0px 5px;
+}
+
+#option_controller {
+  background-color: #ccc;
+  color: #000;
+  position: fixed;
+  right: 50px;
+  top: 60px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px gray;
+}
+
+
+#grid_main{
+  grid-area: grid_main;
+  padding:10px 50px 10px 50px;
+  overflow:auto;
+}
+
+.article_box{
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.checkbox_remove{
+  margin: 10px;
+}
+
+.annotation_text{
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 0px;
+  padding:15px;
+  line-height: 150%;
+  border: 3px solid #dddddd;
+}
+
+.annotation_text.checked {
+  background-color: #ffe;
+}
+
+span[data-entity_type]{
+	border-radius: 3px;
+  cursor:pointer;
+}
+span[data-entity_type='1']{
+  background-color: #faa;
+}
+span[data-entity_type='2']{
+  background-color: #afa;
+}
+span[data-entity_type='3']{
+  background-color: #ffdf0f;
+}
+span[data-entity_type='4']{
+  background-color: #9eccf8;
+}
+span[data-entity_type='5']{
+  background-color: #bf8ed8;
+}
+span[data-entity_type='6']{
+  background-color: #ff9400;
+}
+span[data-entity_type='7']{
+  background-color: #fff;
+  border: solid 3px #faa;
+}
+span[data-entity_type='8']{
+  background-color: #fff;
+  border: solid 3px #afa;
+}
+span[data-entity_type='9']{
+  background-color: #fff;
+  border: solid 3px #aaf;
+}
+
+.entity_controller{
+  position: absolute;
+  background-color: #fff;
+  padding:5px;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  flex-wrap:wrap;
+  width:180px;
+  border:solid 1px #aaa;
+}
+.entity_controller>span{
+  margin:1px;
+}
+.entity_controller>.remove_button{
+  margin:10px 1px 1px 1px;
+}
+
