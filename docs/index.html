@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./static/js/load_data.js" defer></script>
+  <script src="./static/js/script.js" defer></script>
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id='grid_top'>
+    <h1 style="font:white;">Wikipedia 固有表現抽出データセット (サンプル)</h1>
+  </div>
+
+  <div id='grid_main'>
+    <div id='output'>
+      <annotation v-for="(item,idx) in items" :key="idx" :item="item" :ref="`article_${idx}`"></annotation>
+    </div>
+  </div>
+
+</body></html>
