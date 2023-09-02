@@ -2,6 +2,8 @@
 
 **Version: 2.0**
 
+HuggingFace Hubからも利用可能です：https://huggingface.co/datasets/stockmark/ner-wikipedia-dataset
+
 ## 概要
 
 このデータセットはWikipediaから抜き出した文に対して、固有表現をタグ付けしたものです。固有表現をハイライトしたサンプルは[こちら](https://stockmarkteam.github.io/ner-wikipedia-dataset/index.html)でご覧になれます。全データ数は5343で、各データは一文から構成されています。全体の10%程度が固有表現を含まない負例です。このデータセットでタグ付された固有表現のタイプと、それぞれのタイプごとの固有表現数は以下の表にまとめられます。
